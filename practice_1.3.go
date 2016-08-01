@@ -1,16 +1,17 @@
 
-// ¡‘æ1Í —ûK–â‘è1.3
+// ç¬¬1ç«  ç·´ç¿’å•é¡Œ1.3
 package main
 
 import (
 	"fmt"
 	"os"
-	"strconv"
+	//"strconv"
 	"time"
+	"strings"
 )
 
 func main() {
-	// ”ñŒø—¦ƒo[ƒWƒ‡ƒ“(Ver.1)
+	// éåŠ¹ç‡ãƒãƒ¼ã‚¸ãƒ§ãƒ³(Ver.1)
 	tm1 := time.Now()
 	var s1, sep1 string
 	for i := 1; i < len(os.Args); i++ {
@@ -18,22 +19,17 @@ func main() {
 		sep1 = " "
 	}
 	fmt.Println(s1)
-	tm1 = time.Since(tm1).Seconds()
+	tm1_sec := time.Since(tm1).Seconds()
 
-	// Œø—¦ƒo[ƒWƒ‡ƒ“(Ver.2)
+	// åŠ¹ç‡ãƒãƒ¼ã‚¸ãƒ§ãƒ³(Ver.2)
 	tm2 := time.Now()
-	s2, sep2 := "", ""
-	for _, arg := range os.Args[1:] {
-		s2 += sep2 + arg
-		sep2 = " "
-	}
-	fmt.Println(s2)
-	tm2 = time.Since(tm2).Seconds()
+	fmt.Println(strings.Join(os.Args[1:], "+"))
+	tm2_sec := time.Since(tm2).Seconds()
 
-	if ( tm1 > tm2 ) {
-		fmt.Println("Ver.1 is " + strconv.Itoa(tm1 - tm2) + "second(s) later than Ver.2")
+	if ( tm1_sec > tm2_sec ) {
+		fmt.Printf("Ver.1 is %f second(s) later than Ver.2\n", (tm1_sec - tm2_sec))
+	} else {
+		fmt.Printf("Ver.2 is %f second(s) later than Ver.1\n", (tm2_sec - tm1_sec))
 	}
-	else {
-		fmt.Println("Ver.2 is " + strconv.Itoa(tm2 - tm1) + "second(s) later than Ver.1")
-	}
+	fmt.Printf("tm1:%f tm2:%f\n", tm1_sec, tm2_sec)
 }
