@@ -1,0 +1,8 @@
+二行目のやつは行末にスペースあり
+abcde
+abcde 
+cde
+ab cde
+12abcde
+cde
+
