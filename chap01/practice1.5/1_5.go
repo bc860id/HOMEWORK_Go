@@ -1,3 +1,5 @@
+
+// 第1章 練習問題1.5
 package main
 import (
 	"image"
