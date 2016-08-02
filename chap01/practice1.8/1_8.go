@@ -1,5 +1,5 @@
 
-// // 第1章 練習問題1.8
+// 第1章 練習問題1.8
 package main
 import (
 	"fmt"
