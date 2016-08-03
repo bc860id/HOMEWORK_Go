@@ -5,7 +5,10 @@
 #	. setproxyenv
 #
 # 上記入力は特殊なので以下の様に.profileでaliasを定義するとよい。
-#	alias setproxy='. setproxyenv';
+# 以下の例はsetproxyenvをhomeディレクトリに置いた場合。
+# このファイルのhttp_proxy定義部分の「uuu」「ppp」を
+# 定義部分直前のコメントに従い差し替える事。
+#	alias setproxy='. ~/setproxyenv';
 #
 # 上記でaliasを定義した場合はプロキシ設定を以下の入力で行える。
 #	setproxy
