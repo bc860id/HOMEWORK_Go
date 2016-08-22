@@ -10,6 +10,10 @@ import (
 func main() {
 	fmt.Println(tempconv.CToK(0))
 	fmt.Println(tempconv.KToC(0))
+	fmt.Println(tempconv.CToK(-1))
+	fmt.Println(tempconv.KToC(1))
+	fmt.Println(tempconv.CToK(1))
+	fmt.Println(tempconv.KToC(-1))
 }
 
 
