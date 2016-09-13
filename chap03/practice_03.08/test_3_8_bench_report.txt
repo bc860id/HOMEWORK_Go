@@ -1,0 +1,12 @@
+PASS
+BenchmarkForMeasure-4	2000000000	         0.21 ns/op	       0 B/op	       0 allocs/op
+ok  	command-line-arguments	6.629s
+PASS
+BenchmarkForMeasure-4	2000000000	         0.20 ns/op	       0 B/op	       0 allocs/op
+ok  	command-line-arguments	5.868s
+PASS
+BenchmarkForMeasure-4	       1	87094313800 ns/op	8921870736 B/op	187395635 allocs/op
+ok  	command-line-arguments	87.195s
+PASS
+BenchmarkForMeasure-4	       1	371785844500 ns/op	17313541424 B/op	320086491 allocs/op
+ok  	command-line-arguments	371.850s
