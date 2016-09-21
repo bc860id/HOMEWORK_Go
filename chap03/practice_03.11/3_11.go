@@ -1,5 +1,5 @@
 
-// 第3章 練習問題3.10
+// 第3章 練習問題3.11
 package main
 import (
 	"os"
