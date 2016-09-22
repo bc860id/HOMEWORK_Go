@@ -1,5 +1,5 @@
 
-// 第4章 練習問題4.2
+// 第4章 練習問題4.3
 package main
 import (
 	"fmt"
